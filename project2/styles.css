@@ -1,15 +1,13 @@
 body {
-    background-color: #19123c;
-    color: antiquewhite;
+  background-color: antiquewhite;
+
+  margin: 0;
 }
-
-
 
 /* Navigation Bar */
 .nav-bar {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
-  padding: 0 40px;
+  background-color: #bb3a3a;
+  /*border-bottom: 5px solid #cac2c2; */
 }
 
 .nav-bar nav ul {
@@ -33,13 +31,52 @@ body {
 }
 
 .nav-bar nav ul li a:hover {
-  color: #007b5e;
+  color: #23483f;
 }
 
 /* Active link */
 .nav-bar nav ul li a.active {
   color: #007b5e;
   font-weight: 600;
+}
+
+/* Body */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  max-width: 700px;
+  margin: 50px auto;
+  height: 300px;
+  border: 1px solid black;
+
+  justify-content: center;
+  align-items: center;
+}
+.hero-heading {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  background-color: #2b313c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #363d53;
+  transform: translateY(-2px);
+}
+
+.hero-btn:active {
+  transform: translateY(0);
 }
 
 /* Mobile */
